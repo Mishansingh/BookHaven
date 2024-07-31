@@ -19,7 +19,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:4001/contact", formData);
+      await axios.post("https://bookhaven-backend.onrender.com/contact", formData);
       alert("Message sent successfully!");
       setFormData({
         name: "",
