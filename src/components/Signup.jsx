@@ -21,7 +21,7 @@ function Signup() {
       password: data.password,
     };
     await axios
-      .post("https://bookhaven-backend.onrender.com/user/signup", userInfo)
+      .post("https://bookhaven-backend-1.onrender.com/user/signup", userInfo)
       .then((res) => {
         console.log(res.data);
         if (res.data) {
